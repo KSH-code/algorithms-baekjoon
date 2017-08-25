@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "__config": "c",
+        "cstddef": "c",
+        "exception": "c",
+        "initializer_list": "c",
+        "new": "c",
+        "stdexcept": "c",
+        "typeinfo": "c",
+        "iostream": "c"
+    }
+}
