@@ -7,6 +7,11 @@
         "new": "c",
         "stdexcept": "c",
         "typeinfo": "c",
-        "iostream": "c"
+        "iostream": "c",
+        "__locale": "c",
+        "string": "c",
+        "algorithm": "c",
+        "chrono": "c",
+        "limits": "c"
     }
 }
