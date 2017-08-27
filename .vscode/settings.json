@@ -12,6 +12,8 @@
         "string": "c",
         "algorithm": "c",
         "chrono": "c",
-        "limits": "c"
+        "limits": "c",
+        "__bit_reference": "c",
+        "bitset": "c"
     }
 }
