@@ -1,8 +1,10 @@
 # 백준 온라인 문제를 풀이 
 ## 2017-09-23 풀이 목록
+* [contest](contest/cauuniversty/14729/Main.java)
+* [1697](1697/Main.java)
 * [9251](9251/Main.java)
 ## 2017-09-21 풀이 목록
-* [14726](14726/Main.java)
+* [contest](contest/cauuniversty/14726/Main.java)
 * [1697](1697/Main.java) BFS로 풀어야됨
 ## 2017-09-20 풀이 목록
 * [1149](1149/Main.java)
