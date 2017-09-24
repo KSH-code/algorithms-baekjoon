@@ -1,7 +1,10 @@
 # 백준 온라인 문제를 풀이 
 ## 2017-09-24 풀이 목록
+* [2261](2261/Main.java) x, y를 정렬해놓고 풀어야 된다함.
+* [1735](1735/Main.java)
+* [1789](1789/Main.java)
 * [11053](11053/Main.java)
-* [contest](contest/cauuniversty/14731/Main.java)
+* [contest](contest/cauuniversty/14731/Main.java) 왜 런타임에러 뜨지?
 ## 2017-09-23 풀이 목록
 * [contest](contest/cauuniversty/14729/Main.java)
 * [1697](1697/Main.java)
