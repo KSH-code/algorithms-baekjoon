@@ -3,6 +3,7 @@ import java.util.*;
 
 /**
  * BOJ 11404 플로이드
+ * https://gist.github.com/KSH-code/59401b2835dbec0dd7c41dea37005269
  */
 public class Main{
     private static final int MOD = (int)(1e+9)+7;

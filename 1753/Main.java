@@ -18,6 +18,7 @@ class Node implements Comparable<Node>{
 }
 /**
  * BOJ 1753 최단경로
+ * https://gist.github.com/KSH-code/67fb87884e03b0144db3b4387c05e85d
  */
 public class Main{
     public static void main(String[] args) throws IOException{

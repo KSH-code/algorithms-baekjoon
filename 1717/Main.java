@@ -3,6 +3,7 @@ import java.util.*;
 
 /**
  * BOJ 1717 집합의 표현
+ * https://gist.github.com/KSH-code/bb159f20bca5b9435caa351f650a5126
  */
 public class Main{
     public static void main(String[] args) throws IOException{
