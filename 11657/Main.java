@@ -3,6 +3,7 @@ import java.util.*;
 
 /**
  * BOJ 11657 타임머신
+ * https://gist.github.com/KSH-code/db82f6fce9c81d50ce203417a159206a
  */
 class Bus{
     public int s, e ,w;
