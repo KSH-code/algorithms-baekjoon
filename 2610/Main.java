@@ -3,7 +3,7 @@ import java.util.*;
 
 /**
  * BOJ 2610 회의준비
- * https://gist.github.com/KSH-code/2b2ae4511e368033b4b3449a93938b62
+ * 
  */
 public class Main{
     private static int MAX = 12341234;
