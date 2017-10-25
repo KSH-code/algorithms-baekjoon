@@ -1,4 +1,25 @@
-# 백준 온라인 문제를 풀이 
+# 풀어야 될 문제
+* https://www.acmicpc.net/problem/2612
+# 푼 문제
+* [2591](2591/Main.java) DP
+* [2590](2590/Main.java)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# BOJ
 ## 2017-10-24 풀이 목록
 * [2042](2042/Main.java) Segment Tree
 ## 2017-10-23 풀이 목록
