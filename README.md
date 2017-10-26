@@ -5,9 +5,9 @@
 * https://www.acmicpc.net/problem/2612
 ## ?
 # 푼 문제
+## 스터디
 * [1907](1907/Main.java) DP & Combination
 * [2042](2042/Main.java) Segment Tree
-## 스터디
 ## KOI
 * [2591](2591/Main.java) DP
 * [2590](2590/Main.java)
