@@ -1,8 +1,18 @@
 # 풀어야 될 문제
+## 스터디
+* https://www.acmicpc.net/problem/1907
+* https://www.acmicpc.net/problem/3653
+## KOI
 * https://www.acmicpc.net/problem/2612
+## ?
 # 푼 문제
+* [1907](1907/Main.java) DP & Combination
+* [2042](2042/Main.java) Segment Tree
+## 스터디
+## KOI
 * [2591](2591/Main.java) DP
 * [2590](2590/Main.java)
+## ?
 <br>
 <br>
 <br>
@@ -20,8 +30,6 @@
 <br>
 
 # BOJ
-## 2017-10-24 풀이 목록
-* [2042](2042/Main.java) Segment Tree
 ## 2017-10-23 풀이 목록
 * [2589](2589/Main.java) BFS
 ## 2017-10-22 풀이 목록
