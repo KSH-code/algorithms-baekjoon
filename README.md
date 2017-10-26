@@ -1,6 +1,5 @@
 # 풀어야 될 문제
 ## 스터디
-* https://www.acmicpc.net/problem/1907
 * https://www.acmicpc.net/problem/3653
 ## KOI
 * https://www.acmicpc.net/problem/2612

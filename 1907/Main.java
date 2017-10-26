@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.*;
 /**
  *  BOJ 1907 탄소 화합물
- * 
+ *  https://gist.github.com/KSH-code/a53903cfa3d3ed0a0391637676d058a5
  */
 class Main{
 
