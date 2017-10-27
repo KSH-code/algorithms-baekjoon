@@ -3,6 +3,7 @@ import java.io.*;
 import java.util.*;
 /**
  *  BOJ 3653 영화 수집
+ *  https://gist.github.com/KSH-code/37000fdf74880be28a39b5878b5ca847
  */
 public class Main{
 
