@@ -1,6 +1,7 @@
 
 import java.io.*;
 import java.util.*;
+
 /**
  *  BOJ 10797 10부제
  *  https://gist.github.com/KSH-code/c0dc8e38c86335f59a41984caf82a5e4
@@ -20,5 +21,5 @@ public class Main{
         bw.write(String.valueOf(result));
         bw.flush();
     }
-    
+
 }
