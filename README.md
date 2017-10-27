@@ -1,11 +1,11 @@
 # 풀어야 될 문제
 ## 스터디
-* https://www.acmicpc.net/problem/3653
 ## KOI
 * https://www.acmicpc.net/problem/2612
 ## ?
 # 푼 문제
 ## 스터디
+* [3653](3653/Main.java) BIT(펜윅트리)
 * [1907](1907/Main.java) DP & Combination
 * [2042](2042/Main.java) Segment Tree
 ## KOI
