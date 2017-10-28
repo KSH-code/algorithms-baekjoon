@@ -3,6 +3,7 @@ import java.io.*;
 import java.util.*;
 /**
  *  BOJ 10799 쇠막대기
+ *  https://gist.github.com/KSH-code/b0231402085af2e33261bd0921ae82b8
  */
 public class Main{
 
