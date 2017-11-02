@@ -1,7 +1,6 @@
 # 풀어야 될 문제
 ## 스터디
 ## KOI
-* https://www.acmicpc.net/problem/10800
 * https://www.acmicpc.net/problem/10801
 * https://www.acmicpc.net/problem/10802
 * https://www.acmicpc.net/problem/10803
@@ -13,6 +12,7 @@
 * [1907](1907/Main.java) DP & Combination
 * [2042](2042/Main.java) Segment Tree
 ## KOI
+* [10800](10800/Main.java) DP & Sort
 * [10799](10799/Main.java)
 * [10797](10797/Main.java)
 * [2591](2591/Main.java) DP
