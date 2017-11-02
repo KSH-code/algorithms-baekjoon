@@ -1,5 +1,9 @@
 import java.util.*;
 import java.io.*;
+/**
+ * BOJ 10800 컬러볼 풀이
+ * https://gist.github.com/KSH-code/e705293348cbd1aea4567002e516a388
+ */
 class Ball implements Comparable<Ball>{
     public int color, weight, idx;
     public Ball(int color, int weight, int idx){
