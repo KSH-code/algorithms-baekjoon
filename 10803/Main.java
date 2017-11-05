@@ -22,7 +22,11 @@ class Main {
         }
 
         /**
-         *  아이디어 : 아직 너무 복잡한
+         *  아이디어
+         *  max % min == 0 => dp[max][min] = max / min
+         *  dp[i][2] = dp[i - 2][2] + 1
+         *  
+         *  위에 있는게 아닌 경우 solve way 를 찾아야됨
          */
 
         bw.write(String.valueOf(dp[max][min]));
