@@ -2,6 +2,7 @@ import java.util.*;
 import java.io.*;
 /**
  * BOJ 2188 축사 배정
+ * https://gist.github.com/KSH-code/60dbb61d1af8979e396ca49dc97a3b14
  */
 class Main {    
     private static boolean visited[];   
