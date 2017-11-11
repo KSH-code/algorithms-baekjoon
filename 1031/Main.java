@@ -2,13 +2,81 @@ import java.util.*;
 import java.io.*;
 /**
  * BOJ 1031 스타 대결
- * 풀이
- * 1. N을 입력받고 M을 받을때마다 처리해준다.(주석해놓음)
- * 2. N,M을 입력받고 N에서 하나씩 돌린다.(사전순으로 하는 법: 맨 뒤에부터 같은 숫자가 있나 찾아서 거기에 먼저 넣는다.)
- * 3. 네트워크 플로우를 사용(BFS) : 못품
- * 4. DFS를 사용해 풀어보자
  */
 
+class Main {    
+    private static final int MAX = 111, max = 50;
+    private static int matched[][] = new int[MAX][MAX], c[] = new int[MAX], f[] = new int[MAX], N, M, NN = 0, MM = 0;
+    
+    public static void main(String[] args) throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        String str1[] = br.readLine().split(" ");
+        N = Integer.parseInt(str1[0]);
+        M = Integer.parseInt(str1[1]);
+        
+        String str2[] = br.readLine().split(" ");
+        String str3[] = br.readLine().split(" ");
+        
+        for(int i = 1; i<=N; i++){
+            int capacity = Integer.parseInt(str2[i-1]);
+            NN += c[i] = capacity; // NN에 capacity들을 다 더해준다.
+        }
+        for(int i = 1; i<=M; i++){
+            int capacity = Integer.parseInt(str3[i-1]);
+            MM += c[i+max] = capacity; // MM에 capacity들을 다 더해준다.
+        }
+        for(int i = N; i>=1; i--){ // 사전순으로 출력하기 위해서 N부터 시작한다.
+            while(DFS(i)); // 매칭이 되면 계속 매칭을 한다.
+        }
+        for(int i = 1; i<=N; i++){
+            for(int j = 1; j<=M; j++){
+                if(matched[i][j+max] == 1){ // 매칭되면 NN 과 MM을 빼준다.
+                    NN--;
+                    MM--;
+                }
+                bw.write(String.valueOf(matched[i][j+max])); // 하나씩 출력
+            }
+            bw.write("\n"); // 줄 바꿈
+        }
+        if(NN == MM && NN == 0)
+            bw.flush();
+        else
+            System.out.println(-1);
+    }
+    private static boolean DFS(int cur){
+        for(int i = 1; i<=M; i++){
+            if(c[cur] == f[cur]) return false; // 최대로 연결됐으면 종료
+            if(matched[cur][i+max] == 1) continue; // 이미 매칭돼 있다면 다른 B(V)를 찾아봄
+
+            if(c[i+max] > f[i+max]){ // c(B(V)) > f(B(V))
+                matched[cur][i+max]++; // 매칭된거 체크 A(V) -> B(V)
+                f[i+max]++; // f(B(V))++
+                f[cur]++; // f(A(V))++
+                return true;
+            }else{
+                for(int j = 1; j<=N; j++){
+                    if(cur == j) continue; // 같은거는 체크할 필요가 없음
+                    if(matched[j][i+max] == 1){ // 매칭돼있는게 있다면
+                        f[j]--; // 매칭된거의 유량을 1개 빼주고
+                        if(DFS(j)){ // 다른거랑 매칭이 되나 확인
+                            matched[j][i+max] = 0;
+                            matched[cur][i+max] = 1;
+                            f[cur]++;
+                            return true;
+                        }else{
+                            f[j]++;
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+        
+}
+/*
 class Main {    
     private static final int S = 0, T = 110, MAX = 111;
     private static int f[][] = new int[MAX][MAX], c[][] = new int[MAX][MAX];
@@ -66,7 +134,7 @@ class Main {
         }
         return level[T] != -1;
     }
-}
+}*/
 /*
 class Main {    
     public static void main(String[] args) throws IOException{
