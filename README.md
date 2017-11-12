@@ -7,9 +7,11 @@
 * https://www.acmicpc.net/problem/2612
 ## ?
 # 푼 문제
+* [1011](1011/Main.cpp)
 ## 스터디
+* [2188](2185/Main.java) 플레인 스위핑(둘레를 구해야됨(라인들의 길이를 구하면서 플레인스위핑으로 변경된 걸 또 구하면 된다.)(푸는중)
 * [2188](2188/Main.java) 네트워크 플로우(이분매칭을 이용해서 품)
-* [1031](1031/Main.java) 이분매칭(네트워크 플로우를 이용해 푸는중)
+* [1031](1031/Main.java) 이분매칭
 * [3653](3653/Main.java) BIT(펜윅트리)
 * [1907](1907/Main.java) DP & Combination
 * [2042](2042/Main.java) Segment Tree

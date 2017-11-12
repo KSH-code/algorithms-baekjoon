@@ -6,8 +6,8 @@ import java.io.*;
 
 class Main {    
     private static final int MAX = 111, max = 50;
-    private static int matched[][] = new int[MAX][MAX], c[] = new int[MAX], f[] = new int[MAX], N, M, NN = 0, MM = 0;
-    
+    private static int matched[][] = new int[MAX][MAX], c[] = new int[MAX], N, M, NN = 0, MM = 0;
+    private static int vcnt = 0, visited[] = new int[MAX];
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -27,54 +27,89 @@ class Main {
             int capacity = Integer.parseInt(str3[i-1]);
             MM += c[i+max] = capacity; // MM에 capacity들을 다 더해준다.
         }
-        for(int i = N; i>=1; i--){ // 사전순으로 출력하기 위해서 N부터 시작한다.
-            while(DFS(i)); // 매칭이 되면 계속 매칭을 한다.
+        if(NN != MM){
+            System.out.println(-1);
+            return;
+        }
+        for(int i = 1; i<=N; i++){ // 사전순으로 출력하기 위해서 N부터 시작한다.
+            for(int j = 1, length = c[i]; j<=length; j++){
+                vcnt++;
+                if(!DFS(i)){
+                    System.out.println(-1);
+                    return;
+                }
+            }
+        }
+        if(sum(c, 51, M+max) != 0){
+            System.out.println(-1);
+            return;
+        }
+        for(int i = 1; i<=N; i++){ // 비교하기 위한 것
+            for(int j = 1; j<=M; j++){
+                vcnt++;
+                if(matched[i][j] == 1 && dfs(i, j, i, j)){
+                    matched[i][j] = 0;
+                }
+            }
         }
         for(int i = 1; i<=N; i++){
             for(int j = 1; j<=M; j++){
-                if(matched[i][j+max] == 1){ // 매칭되면 NN 과 MM을 빼준다.
+                if(matched[i][j] == 1){ // 매칭되면 NN 과 MM을 빼준다.
                     NN--;
                     MM--;
                 }
-                bw.write(String.valueOf(matched[i][j+max])); // 하나씩 출력
+                bw.write(String.valueOf(matched[i][j])); // 하나씩 출력
             }
             bw.write("\n"); // 줄 바꿈
         }
-        if(NN == MM && NN == 0)
-            bw.flush();
-        else
-            System.out.println(-1);
+        bw.flush();
     }
     private static boolean DFS(int cur){
-        for(int i = 1; i<=M; i++){
-            if(c[cur] == f[cur]) return false; // 최대로 연결됐으면 종료
-            if(matched[cur][i+max] == 1) continue; // 이미 매칭돼 있다면 다른 B(V)를 찾아봄
-
-            if(c[i+max] > f[i+max]){ // c(B(V)) > f(B(V))
-                matched[cur][i+max]++; // 매칭된거 체크 A(V) -> B(V)
-                f[i+max]++; // f(B(V))++
-                f[cur]++; // f(A(V))++
+        visited[cur] = vcnt;
+        for(int i = 1; i<=M; i++){            
+            if(matched[cur][i] == 1) continue; // 이미 매칭돼 있다면 다른 B(V)를 찾아봄
+            c[cur]--;
+            if(c[i+max] > 0){ // c(B(V)) > 0
+                matched[cur][i]++; // 매칭된거 체크 A(V) -> B(V)
+                c[i+max]--; // f(B(V))++
                 return true;
-            }else{
-                for(int j = 1; j<=N; j++){
-                    if(cur == j) continue; // 같은거는 체크할 필요가 없음
-                    if(matched[j][i+max] == 1){ // 매칭돼있는게 있다면
-                        f[j]--; // 매칭된거의 유량을 1개 빼주고
-                        if(DFS(j)){ // 다른거랑 매칭이 되나 확인
-                            matched[j][i+max] = 0;
-                            matched[cur][i+max] = 1;
-                            f[cur]++;
-                            return true;
-                        }else{
-                            f[j]++;
-                        }
+            }
+            for(int j = 1; j<cur; j++){
+                if(matched[j][i] == 1){ // 매칭돼있는게 있다면
+                    if(visited[j] == vcnt) continue;
+                    c[j]++;
+                    if(DFS(j)){ // 다른거랑 매칭이 되나 확인
+                        matched[j][i] = 0;
+                        matched[cur][i] = 1;
+                        return true;
                     }
                 }
             }
         }
         return false;
     }
+    
+    private static boolean dfs(int start){
+        visited[start] = true;
+        for(int i = 1; i<=M; i++){
+            if(edges[start][i] == -1) break;
+            int v = edges[start][i];
+            if(B[v] == 0 || (!visited[B[v]] && dfs(B[v]))){
+                B[v] = start;
+                return true;
+            }
+        }
+        return false;
+    }
+
         
+    private static int sum(int a[], int min, int max){
+        int result = 0;
+        for(int i = min; i<=max; i++){
+            result += a[i];
+        }
+        return result;
+    }
 }
 /*
 class Main {    

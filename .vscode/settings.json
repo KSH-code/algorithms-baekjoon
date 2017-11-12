@@ -14,6 +14,7 @@
         "chrono": "c",
         "limits": "c",
         "__bit_reference": "c",
-        "bitset": "c"
+        "bitset": "c",
+        "cstdio": "cpp"
     }
 }
