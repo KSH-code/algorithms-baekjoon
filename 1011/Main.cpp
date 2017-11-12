@@ -1,7 +1,7 @@
 #include <cstdio>
 /**
  * https://www.acmicpc.net/problem/1011
- * BOJ 백준 1011 Fly me to the Alpha Centauri
+ * BOJ 백준온라인져지 1011 Fly me to the Alpha Centauri
  */
 int main(){
     long T,x,y,pos,i;
