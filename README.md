@@ -7,6 +7,7 @@
 * https://www.acmicpc.net/problem/2612
 ## ?
 # 푼 문제
+* [2775](2775/Main.cpp)
 * [10250](10250/Main.cpp)
 * [1011](1011/Main.cpp)
 ## 스터디
