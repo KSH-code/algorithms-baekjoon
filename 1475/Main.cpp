@@ -2,7 +2,7 @@
 #include <cstring>
 /**
  * https://www.acmicpc.net/problem/1475
- * BOJ 백준온라인져지 1475 방 번호 풀이 풀이
+ * BOJ 백준온라인져지 1475 방 번호 풀이
  */
 #define MAX 1111111
 #define LENGTH 10
