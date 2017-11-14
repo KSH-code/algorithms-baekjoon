@@ -7,6 +7,7 @@
 * https://www.acmicpc.net/problem/2612
 ## ?
 # 푼 문제
+* [6064](6064/Main.cpp)
 * [1475](1475/Main.cpp)
 * [2775](2775/Main.cpp)
 * [10250](10250/Main.cpp)
