@@ -1,5 +1,12 @@
 import java.util.*;
-
+/**
+ * BOJ 백준온라인져지 2185 직사각형의 합집합 풀이
+ * 아직 코드는 안짬
+ * 솔루션 : 
+ * 1. 플레인스위핑으로 사각형들을 다 합친다.
+ * 2. 라인을 그어서 확인하고 길이를 더해준다.
+ * 참고 : https://blog.sisobus.com/2014/02/plane-sweeping.html#.WgwlJbSFjBI
+ */
 public class Main {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
