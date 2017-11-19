@@ -1,6 +1,7 @@
 import java.util.*;
 import java.io.*;
 /**
+ * https://www.acmicpc.net/problem/5525
  * BOJ 백준온라인져지 5525 IOIOI 풀이
  * 이슈 : StringBuilder를 사용하지 않으면 시간초과가 난다.
  */

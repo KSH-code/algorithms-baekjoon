@@ -1,6 +1,7 @@
 import java.util.*;
 import java.io.*;
 /**
+ * https://www.acmicpc.net/problem/1786
  * BOJ 백준온라인져지 1786 찾기 풀이
  */
 public class Main {
