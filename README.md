@@ -6,7 +6,6 @@
 * https://www.acmicpc.net/problem/10803
 * https://www.acmicpc.net/problem/2612
 ## 동아리
-* https://www.acmicpc.net/problem/2108
 * https://www.acmicpc.net/problem/1427
 # 푼 문제
 ## 동아리
