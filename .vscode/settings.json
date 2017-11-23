@@ -16,6 +16,11 @@
         "__bit_reference": "c",
         "bitset": "c",
         "cstdio": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp",
+        "vector": "cpp",
+        "__split_buffer": "cpp",
+        "utility": "cpp"
     }
 }
