@@ -2,7 +2,7 @@
 #include <math.h>
 /**
  * https://www.acmicpc.net/problem/2108
- * BOJ 백준온라인져지 9426 중앙값 측정 풀이
+ * BOJ 백준온라인져지 2108 통계학 풀이
  */
 #define MAX_LENGTH 8001
 #define RoundOff(x, dig) (floor((x) * pow(10,dig) + 0.5) / pow(10,dig))
