@@ -21,6 +21,7 @@
         "iterator": "cpp",
         "vector": "cpp",
         "__split_buffer": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "stack": "cpp"
     }
 }
