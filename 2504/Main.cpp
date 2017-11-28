@@ -18,22 +18,26 @@ int main(){
     char* string = new char[31]; // 입력 받을 string
     scanf("%s", string);
     int idx = 0, i = 0, length = strlen(string), tempInteger, result = 0;
-    // idx 는
-    while(i != length){
-        temp = string[i++];
-        if(temp == '(' || temp == '['){
+    // idx 는 integerList에 접근하기 위한 변수다. 괄호의 value 를 가져온다.
+    // i 는 string 에 저장된 문자를 뽑아쓰기 위한 변수
+    // length 는 string의 실제 길이
+    // tempInteger 는 integerList[idx] 를 빼서 저장한다.
+    // result 는 tempInteger들의 값을 더해서 답을 출력해주기 위한 변수다.
+    while(i != length){ // 마지막 문자가 아니라면 반복함
+        temp = string[i++]; // 하나씩 뽑는다
+        if(temp == '(' || temp == '['){ // 여는 괄호라면
             idx++;
             if(temp == '(')
                 integerList[idx] = 2 * integerList[idx-1];
             if(temp == '[')
                 integerList[idx] = 3 * integerList[idx-1];
             characterList.push(temp);
-        }else{
+        }else{ // 여는 괄호가 아니라면
             if(characterList.empty()){ // 올바른 괄호가 아닐경우
                 result = 0;
                 break;
             }
-            compared = characterList.top(), characterList.pop();
+            compared = characterList.top(), characterList.pop(); // 스택에 저장된것을 뽑는다.
             tempInteger = integerList[idx--];
             if(pre == ']' || pre == ')'){
                 tempInteger = 0;
