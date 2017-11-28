@@ -22,6 +22,7 @@
         "vector": "cpp",
         "__split_buffer": "cpp",
         "utility": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "deque": "cpp"
     }
 }
