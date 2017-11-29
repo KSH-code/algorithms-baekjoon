@@ -1,8 +1,8 @@
 import java.util.*;
 import java.io.*;
 /**
- * https://www.acmicpc.net/problem/11866
- * BOJ 백준온라인져지 11866 조세퍼스 문제 0 풀이
+ * https://www.acmicpc.net/problem/1158
+ * BOJ 백준온라인져지 1158 조세퍼스 문제 풀이
  */
 class Main {
     
