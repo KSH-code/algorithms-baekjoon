@@ -25,6 +25,7 @@
         "stack": "cpp",
         "deque": "cpp",
         "queue": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "functional": "cpp"
     }
 }
