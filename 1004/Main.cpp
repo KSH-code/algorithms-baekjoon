@@ -4,12 +4,6 @@
  * https://www.acmicpc.net/problem/1004
  * BOJ 백준온라인져지 1004 어린 왕자 풀이
  */
-int max(float a, float b){
-    return a>b?a:b;
-}
-int min(float a, float b){
-    return a>b?b:a;
-}
 int main(){
     
     int T;
