@@ -23,6 +23,8 @@
         "__split_buffer": "cpp",
         "utility": "cpp",
         "stack": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "queue": "cpp",
+        "memory": "cpp"
     }
 }
