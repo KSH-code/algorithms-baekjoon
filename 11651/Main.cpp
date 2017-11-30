@@ -14,7 +14,7 @@ void quickSort(vector<long> &arr, int left, int right) {
             i++;
         while (arr[j] > pivot)
             j--;
-        if (i<= j) {
+        if (i <= j) {
             temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
