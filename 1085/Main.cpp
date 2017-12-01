@@ -9,7 +9,7 @@ int min(int a, int b){
 int main(){
     int x,y,w,h;
     scanf("%d%d%d%d",&x,&y,&w,&h);
-    int result = min(w,h);
+    int result = min(x,y);
     result = min(min(w-x,result),h-y);
     printf("%d", result);
 }
