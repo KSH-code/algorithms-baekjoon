@@ -1,5 +1,9 @@
 import java.io.*;
 import java.util.*;
+/**
+ * https://www.acmicpc.net/problem/2156
+ * BOJ 백준온라인져지 2156 포도주 시식 풀이
+ */
 class Main{
         private static int mResult = 0;
         private static int n;
@@ -7,26 +11,18 @@ class Main{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         n = Integer.parseInt(br.readLine());
-        int mList[] = new int[n+1];
-        int dp[] = new int[n+1];
+        int arr[] = new int[n+1];
+        int result[] = new int[n+1];
         for(int i = 1;i<=n;i++){
-            mList[i] = Integer.parseInt(br.readLine());
+            arr[i] = Integer.parseInt(br.readLine());
         }
-        dp[0] = 0;
-        dp[1] = mList[1];
-        int temp1,temp2;
-        for(int i = 2;i<=n-2;i++){
-            temp1 = dp[i-1]+mList[i]+mList[i+2];
-            temp2 = dp[i-2]+mList[i]+mList[i+1];
-            dp[i] = Math.max(temp1, temp2);
-            if(temp1>temp2){
-                i++;
-            }
+        for(int i = 1, length = n >= 2 ? n : 1; i<=length; i++){
+            result[i] += arr[i-1] + arr[i];
         }
-        for(int i=n-1;i<=n;i++){
-            dp[i] = Math.max(mList[i]+dp[i-3]+dp[i-1], mList[i]+dp[i-2]+dp[i-3]);
+        for(int i = 3; i<=n; i++){
+            result[i] = Math.max(Math.max(result[i-3] + arr[i-1] + arr[i], result[i-2] + arr[i]), result[i-1]);
         }
-        bw.write(String.valueOf(dp[n]));
+        bw.write(String.valueOf(result[n]));
         bw.flush();
     }
 }
