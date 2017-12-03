@@ -6,7 +6,7 @@
 * https://www.acmicpc.net/problem/10803
 * https://www.acmicpc.net/problem/2612
 ## 동아리
-* 
+* https://www.acmicpc.net/problem/2573
 # 푼 문제
 ## 동아리
 * [2156](2156/Main.java)
