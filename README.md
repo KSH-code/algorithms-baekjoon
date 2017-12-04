@@ -6,9 +6,10 @@
 * https://www.acmicpc.net/problem/10803
 * https://www.acmicpc.net/problem/2612
 ## 동아리
-* https://www.acmicpc.net/problem/2573
+* 
 # 푼 문제
 ## 동아리
+* [2293](2293/Main.cpp)
 * [2573](2573/Main.cpp)
 * [2156](2156/Main.java)
 * [1932](1932/Main.cpp)
