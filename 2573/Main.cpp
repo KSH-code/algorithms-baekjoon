@@ -53,7 +53,7 @@ int main(){
                 if(vertex[tempRow][tempColumn])
                     queue.push(make_pair(tempRow, tempColumn)), visited[tempRow][tempColumn] = true;
                 else 
-                    if(!visited[tempRow][tempColumn]) vertex[row][column]--, h = true;
+                    if(!visited[tempRow][tempColumn]) vertex[row][column]--;
             }
             vertex[row][column] = max(vertex[row][column], 0);
         }
