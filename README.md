@@ -6,7 +6,11 @@
 * https://www.acmicpc.net/problem/10803
 * https://www.acmicpc.net/problem/2612
 ## 동아리
-* 
+* https://www.acmicpc.net/problem/2960
+* https://www.acmicpc.net/problem/6588
+* https://www.acmicpc.net/problem/1016
+* https://www.acmicpc.net/problem/1644
+* https://www.acmicpc.net/problem/2904
 # 푼 문제
 ## 동아리
 * [2490](2490/Main.cpp)
