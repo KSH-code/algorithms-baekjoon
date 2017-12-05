@@ -10,9 +10,9 @@
 * https://www.acmicpc.net/problem/6588
 * https://www.acmicpc.net/problem/1016
 * https://www.acmicpc.net/problem/1644
-* https://www.acmicpc.net/problem/2904
 # 푼 문제
 ## 동아리
+* [2960](2960/Main.cpp)
 * [2490](2490/Main.cpp)
 * [10872](10872/Main.cpp)
 * [1037](1037/Main.cpp)
