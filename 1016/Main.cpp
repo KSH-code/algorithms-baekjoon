@@ -15,6 +15,8 @@ int main(){
     int *duplicatedValue = new int[MAX];
     for(long long i = 2; i * i <= max; i++){
         
+        if(duplicatedValue[i] == 1) continue;
+
         for(long long j = i * 2; j * j <= max; j += i){
             if(duplicatedValue[i] == 0) duplicatedValue[j]++;
             else if(duplicatedValue[i] > 1) duplicatedValue[j]--; 
