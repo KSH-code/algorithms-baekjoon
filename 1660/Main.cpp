@@ -13,7 +13,7 @@ int main(){
     vector<int> tetrahedron;
     tetrahedron.push_back(temp);
     while(temp++){
-        bomb = temp * (temp + 1) * (temp + 2) / 6;
+        bomb += temp * (temp + 1) / 2;
         if(bomb > 300000) break;
         tetrahedron.push_back(bomb);
     }
