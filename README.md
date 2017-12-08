@@ -9,6 +9,7 @@
 * https://www.acmicpc.net/problem/1644
 # 푼 문제
 ## 동아리
+* [2748](2748/Main.cpp)
 * [1660](1660/Main.cpp)
 * [2294](2294/Main.cpp)
 * [11047](11047/Main.cpp)
