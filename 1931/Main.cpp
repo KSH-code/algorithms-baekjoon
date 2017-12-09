@@ -11,10 +11,6 @@ bool isBiggerAThanB(Time &A, Time &B){
         return A.startTime > B.startTime;
     return A.endTime > B.endTime;
 }
-// template <class T> void swap ( T& a, T& b )
-// {
-//   T c(a); a=b; b=c;
-// }
 Time timeList[100001];
 Time tempTimeList[100001];
 void mergeSort(int l, int r){
