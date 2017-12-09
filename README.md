@@ -9,6 +9,7 @@
 * https://www.acmicpc.net/problem/11778
 # 푼 문제
 ## 동아리
+* [1931](1931/Main.cpp)
 * [13241](13241/Main.cpp)
 * [1977](1977/Main.cpp)
 * [10757](10757/Main.java)
