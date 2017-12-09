@@ -11,32 +11,36 @@ bool isBiggerAThanB(Time &A, Time &B){
         return A.startTime > B.startTime;
     return A.endTime > B.endTime;
 }
-template <class T> void swap ( T& a, T& b )
-{
-  T c(a); a=b; b=c;
-}
+// template <class T> void swap ( T& a, T& b )
+// {
+//   T c(a); a=b; b=c;
+// }
 Time timeList[100001];
-int i,j,mid;
-Time pivot;
-void quickSort(int l, int r){
-    if(l < r) return;
-    mid = (l + r) / 2;
-    quickSort(l, mid - 1);
-    quickSort(mid + 1, r);
-    i = l, j = r;
-    pivot = timeList[(i + j) / 2];
-    do{
-
-        while(!isBiggerAThanB(timeList[i], pivot)) i++;
-        while(isBiggerAThanB(timeList[j], pivot)) j--;
-
-        if(i <= j){
-            swap(timeList[i], timeList[j]);
-            i++, j--;
+Time tempTimeList[100001];
+void mergeSort(int l, int r){
+    if(l < r){
+        int mid = (l + r) / 2;
+        mergeSort(l, mid);
+        mergeSort(mid + 1, r);
+        
+        int i = l, j = mid + 1, k = l, cnt = 0;
+        while(i <= mid && j <= r){
+            if(isBiggerAThanB(timeList[i], timeList[j]))
+                tempTimeList[k++] = timeList[j++];
+            else
+                tempTimeList[k++] = timeList[i++];
         }
-
-    }while(i <= j);
-
+        while(i <= mid){
+            tempTimeList[k++] = timeList[i++];
+        }
+        while(j <= r){
+            tempTimeList[k++] = timeList[j++];
+        }
+        while(l <= r){
+            timeList[l] = tempTimeList[l];
+            l++;
+        }
+    }
 }
 
 int main(){
@@ -47,7 +51,7 @@ int main(){
         scanf("%d%d", &timeList[i].startTime, &timeList[i].endTime);
     }
 
-    quickSort(0, N - 1);
+    mergeSort(0, N - 1);
     
     int result = 0, endTime = -1;
 
