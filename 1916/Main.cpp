@@ -2,7 +2,7 @@
 #include <vector>
 #include <queue>
 /**
- * https://www.acmicpc.net/problem/191
+ * https://www.acmicpc.net/problem/1916
  * BOJ 백준온라인져지 1916 최소비용 구하기 풀이
  */
 #define INF 1100000000
