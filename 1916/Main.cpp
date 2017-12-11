@@ -49,7 +49,7 @@ int main(){
             int nextDist = hereDist + edges[here][i].w;
             if (distance[there] > nextDist) {
                 distance[there] = nextDist;
-                pq.push(make_pair(nextDist, there));
+                pq.push(make_pair(distance[there], there));
             }
         }
     }
