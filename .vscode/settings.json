@@ -33,6 +33,7 @@
         "istream": "cpp",
         "ostream": "cpp",
         "streambuf": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "type_traits": "cpp"
     }
 }
