@@ -61,11 +61,6 @@ int main(){
 		}
 		visited[t] = true;
     }
-
-    visited = new bool[vertexSize + 1];
-
-    
-    
     int result = 0;
     for(int i = 1; i <= vertexSize; i++) if(result < distance1[i] + distance2[i]) result = distance1[i] + distance2[i];
     printf("%d", result);
