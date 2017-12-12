@@ -1,12 +1,11 @@
 # 풀어야 될 문제
-## 스터디
-## KOI
-* https://www.acmicpc.net/problem/10801
-* https://www.acmicpc.net/problem/10802
-* https://www.acmicpc.net/problem/10803
-* https://www.acmicpc.net/problem/2612
 ## 동아리
-* https://www.acmicpc.net/problem/11778
+* https://www.acmicpc.net/workbook/view/1760 홍대
+* https://www.acmicpc.net/workbook/view/13 소수
+* https://www.acmicpc.net/workbook/view/62 쉬운문제 
+* https://www.acmicpc.net/workbook/view/205 입출력 
+* https://www.acmicpc.net/workbook/view/169 죠세푸스
+* https://www.acmicpc.net/workbook/view/159 BFS, DFS
 # 푼 문제
 ## 동아리
 * [1238](1238/Main.cpp)
