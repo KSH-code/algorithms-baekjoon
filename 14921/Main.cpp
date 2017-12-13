@@ -19,7 +19,7 @@ int main(){
     int negativeN = -1, positiveN = -1;
     for(int i = 0; i < N; i++){
         scanf("%d", &list[i]);
-        if(list[i] > 0 && positiveN == -1){
+        if(list[i] >= 0 && positiveN == -1){
             positiveN = i;
         }
         if(list[i] < 0 && negativeN == -1){
