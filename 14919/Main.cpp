@@ -3,7 +3,7 @@
 #include <math.h>
 /**
  * https://www.acmicpc.net/problem/14919
- * BOJ 백준온라인져지 14919 더하기 풀이
+ * BOJ 백준온라인져지 14919 분포표 만들기 풀이
  */
 #define MUL 1e+6
 using namespace std;
