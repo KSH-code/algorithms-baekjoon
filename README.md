@@ -6,8 +6,10 @@
 * https://www.acmicpc.net/workbook/view/205 입출력 
 * https://www.acmicpc.net/workbook/view/169 죠세푸스
 * https://www.acmicpc.net/workbook/view/159 BFS, DFS
+* https://koosa.ga/problem/0/ problem level 1
 # 푼 문제
 ## 동아리
+* [14919](14919/Main.cpp)
 * [14918](14918/Main.cpp)
 * [14920](14920/Main.cpp)
 * [1238](1238/Main.cpp)
