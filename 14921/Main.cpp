@@ -24,8 +24,10 @@ int main(){
         if(abs(maximum) > abs(list[l] + list[r])){
             maximum = list[l] + list[r];
         }
-        if(abs(list[l] + list[r]) > abs(list[l] + list[r - 1])){
+        if(abs(list[l] + list[r]) >= abs(list[l] + list[r - 1])){
             r--;
+        }else if(r + 1 < N && abs(list[l] + list[r]) > abs(list[l] + list[r + 1])){
+            r++;
         }else{
             l++;
         }
