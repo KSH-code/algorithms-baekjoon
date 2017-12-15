@@ -25,11 +25,9 @@ int main(){
     scanf("%d%d", &rowSize, &columnSize);
     rowSize++, columnSize++;
     int ***resultArray = new int**[rowSize], **map = new int*[rowSize];
-    bool **isVisited = new bool*[rowSize];
     for(int i = 1; i < rowSize; i++){
         resultArray[i] = new int*[columnSize];
         map[i] = new int[columnSize];
-        isVisited[i] = new bool[columnSize];
         for(int j = 1; j < columnSize; j++){
             resultArray[i][j] = new int[2];
             char temp;
