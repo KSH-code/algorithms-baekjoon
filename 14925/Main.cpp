@@ -1,7 +1,7 @@
 #include <cstdio>
 /**
- * https://www.acmicpc.net/problem/14924
- * BOJ 백준온라인져지 14924 폰 노이만과 파리 풀이
+ * https://www.acmicpc.net/problem/14925
+ * BOJ 백준온라인져지 14925 목장 건설하기 풀이
  */
 int min(int a, int b){
     return a < b ? a : b;
