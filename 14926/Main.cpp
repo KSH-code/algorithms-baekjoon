@@ -24,5 +24,5 @@ int main(){
         }
         printf("a%d ", currentVertex);
     }
-    printf("a%d", 1);
+    printf("a1");
 }
