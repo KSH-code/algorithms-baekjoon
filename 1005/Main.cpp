@@ -35,8 +35,7 @@ int main() {
             indegree[endVertex]++;
         }
         for(int i = 1; i < numberOfVertex; i++) {
-            if(indegree[i] == 0) queue.push(i);
-            minimumSecond[i] = second[i];
+            if(indegree[i] == 0) queue.push(i), minimumSecond[i] = second[i];
         }
         int endVertex;
         scanf("%d", &endVertex);
