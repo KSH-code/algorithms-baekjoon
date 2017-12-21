@@ -1,7 +1,6 @@
 #include <cstdio>
 #include <queue>
 #include <vector>
-#include <algorithm>
 /**
  * https://www.acmicpc.net/problem/1766
  * BOJ 백준온라인져지 1766 문제집 풀이
@@ -26,9 +25,6 @@ int main () {
         scanf("%d%d", &firstSolve, &lastSolve);
         edges[firstSolve].push_back(lastSolve);
         indegree[lastSolve]++;
-    }
-    for (int i = 1; i < numberOfVector; i++) {
-        sort(edges[i].begin(), edges[i].end());
     }
     priority_queue<int, vector<int>, greater<int> > queue;
     for (int i = 1; i < numberOfVector; i++) {
