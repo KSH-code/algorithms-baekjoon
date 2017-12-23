@@ -9,6 +9,7 @@
 * https://koosa.ga/problem/0/ problem level 1
 # 푼 문제
 ## 동아리
+* [2623](2623/Main.cpp)
 * [1766](1766/Main.cpp)
 * [1005](1005/Main.cpp)
 * [14927](14927/Main.cpp) 풀어야 됨
