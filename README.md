@@ -1,5 +1,5 @@
 # 풀어야 될 문제
-## 동아리
+## 그냥 문제집
 * https://www.acmicpc.net/workbook/view/1760 홍대
 * https://www.acmicpc.net/workbook/view/13 소수
 * https://www.acmicpc.net/workbook/view/62 쉬운문제 
@@ -12,7 +12,7 @@
 * [2623](2623/Main.cpp)
 * [1766](1766/Main.cpp)
 * [1005](1005/Main.cpp)
-* [14927](14927/Main.cpp) 풀어야 됨
+* [14927](14927/Main.cpp)
 * [14926](14926/Main.cpp)
 * [14925](14925/Main.cpp)
 * [14924](14924/Main.cpp)
