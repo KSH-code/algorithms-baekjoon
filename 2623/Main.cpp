@@ -17,7 +17,7 @@ int main () {
     for (int i = 1; i < numberOfVector; i++) {
         indegree[i] = 0;
     }
-    while(testCase--) {
+    while (testCase--) {
         int numberOfEdge;
         int firstSinger;
         scanf("%d%d", &numberOfEdge, &firstSinger);
