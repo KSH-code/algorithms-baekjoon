@@ -1,3 +1,6 @@
+```
+int (*p)[N] = new int[M][N];
+```
 # 풀어야 될 문제
 ## 그냥 문제집
 * https://www.acmicpc.net/workbook/view/1760 홍대
@@ -9,10 +12,10 @@
 * https://koosa.ga/problem/0/ problem level 1
 # 푼 문제
 ## 동아리
+* [14927](14927/Main.cpp)
 * [2623](2623/Main.cpp)
 * [1766](1766/Main.cpp)
 * [1005](1005/Main.cpp)
-* [14927](14927/Main.cpp)
 * [14926](14926/Main.cpp)
 * [14925](14925/Main.cpp)
 * [14924](14924/Main.cpp)
