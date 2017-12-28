@@ -1,9 +1,10 @@
 ```
 int (*p)[N] = new int[M][N];
 ```
-# 풀어야 될 문제
-## 그냥 문제집
+# 푼 문제집
 * https://www.acmicpc.net/workbook/view/1760 홍대
+# 풀어야 될 문제집
+* https://www.acmicpc.net/problem/tag/%ED%9E%99
 * https://www.acmicpc.net/workbook/view/13 소수
 * https://www.acmicpc.net/workbook/view/62 쉬운문제 
 * https://www.acmicpc.net/workbook/view/205 입출력 
@@ -12,6 +13,7 @@ int (*p)[N] = new int[M][N];
 * https://koosa.ga/problem/0/ problem level 1
 # 푼 문제
 ## 동아리
+* [1927](1927/Main.cpp)
 * [14927](14927/Main.cpp)
 * [2623](2623/Main.cpp)
 * [1766](1766/Main.cpp)
