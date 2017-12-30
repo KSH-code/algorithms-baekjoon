@@ -35,6 +35,7 @@
         "streambuf": "cpp",
         "tuple": "cpp",
         "type_traits": "cpp",
-        "cstdlib": "cpp"
+        "cstdlib": "cpp",
+        "__nullptr": "cpp"
     }
 }
