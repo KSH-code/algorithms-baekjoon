@@ -36,6 +36,8 @@
         "tuple": "cpp",
         "type_traits": "cpp",
         "cstdlib": "cpp",
-        "__nullptr": "cpp"
+        "__nullptr": "cpp",
+        "string_view": "cpp",
+        "__functional_base": "cpp"
     }
 }
