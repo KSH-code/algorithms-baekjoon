@@ -13,6 +13,7 @@ int (*p)[N] = new int[M][N];
 * https://koosa.ga/problem/0/ problem level 1
 # 푼 문제
 ## 동아리
+* [1918](1918/Main.cpp)
 * [1655](1655/Main.cpp)
 * [1715](1715/Main.cpp)
 * [11286](11286/Main.cpp)
