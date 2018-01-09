@@ -4,15 +4,10 @@ int (*p)[N] = new int[M][N];
 # 푼 문제집
 * https://www.acmicpc.net/workbook/view/1760 홍대
 # 풀어야 될 문제집
-* https://www.acmicpc.net/problem/tag/%ED%9E%99
-* https://www.acmicpc.net/workbook/view/13 소수
-* https://www.acmicpc.net/workbook/view/62 쉬운문제 
-* https://www.acmicpc.net/workbook/view/205 입출력 
-* https://www.acmicpc.net/workbook/view/169 죠세푸스
-* https://www.acmicpc.net/workbook/view/159 BFS, DFS
-* https://koosa.ga/problem/0/ problem level 1
+* https://ps.kajebiii.ga/chest/boj/
 # 푼 문제
 ## 동아리
+* [1504](1504/Main.cpp)
 * [1918](1918/Main.cpp)
 * [1655](1655/Main.cpp)
 * [1715](1715/Main.cpp)
