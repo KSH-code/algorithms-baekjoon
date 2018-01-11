@@ -1,5 +1,6 @@
 #include <cstdio>
 #include <queue>
+#include <string.h>
 /**
  * https://www.acmicpc.net/problem/1261
  * BOJ 백준온라인져지 1261 알고스팟 풀이
@@ -22,11 +23,7 @@ int main () {
     for (int i = 0; i < row; i++) {
         scanf("%s", map[i]);
     }
-    for (int i = 0; i < row; i++) {
-        for (int j = 0; j < col; j++) {
-            visited[i][j] = false;
-        }
-    }
+    memset(visited, 0, sizeof(visited));
     priority_queue<node> pq;
     pq.push(node(0, 0, 0));
     while(pq.size()) {
