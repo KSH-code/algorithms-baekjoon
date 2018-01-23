@@ -38,6 +38,7 @@
         "cstdlib": "cpp",
         "__nullptr": "cpp",
         "string_view": "cpp",
-        "__functional_base": "cpp"
+        "__functional_base": "cpp",
+        "__string": "cpp"
     }
 }
